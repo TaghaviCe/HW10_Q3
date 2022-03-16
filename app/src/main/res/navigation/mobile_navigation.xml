@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.hw10_q3.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+        <action
+            android:id="@+id/action_nav_home_to_flower3Fragment"
+            app:destination="@id/flower3Fragment" />
+        <action
+            android:id="@+id/action_nav_home_to_flower4Fragment"
+            app:destination="@id/flower4Fragment" />
+        <action
+            android:id="@+id/action_nav_home_to_flower2Fragment"
+            app:destination="@id/flower2Fragment" />
+        <action
+            android:id="@+id/action_nav_home_to_flower1Fragment"
+            app:destination="@id/flower1Fragment" />
+        <action
+            android:id="@+id/action_nav_home_to_exitFragment"
+            app:destination="@id/exitFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.hw10_q3.ui.gallery.ProfileFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_profile" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.hw10_q3.ui.slideshow.SettingshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/flower1Fragment"
+        android:name="com.example.hw10_q3.Flower1Fragment"
+        android:label="fragment_flower1"
+        tools:layout="@layout/fragment_flower1" />
+    <fragment
+        android:id="@+id/flower3Fragment"
+        android:name="com.example.hw10_q3.Flower3Fragment"
+        android:label="fragment_flower3"
+        tools:layout="@layout/fragment_flower3" />
+    <fragment
+        android:id="@+id/flower4Fragment"
+        android:name="com.example.hw10_q3.Flower4Fragment"
+        android:label="fragment_flower4"
+        tools:layout="@layout/fragment_flower4" />
+    <fragment
+        android:id="@+id/flower2Fragment"
+        android:name="com.example.hw10_q3.Flower2Fragment"
+        android:label="fragment_flower2"
+        tools:layout="@layout/fragment_flower2" />
+    <fragment
+        android:id="@+id/exitFragment"
+        android:name="com.example.hw10_q3.ExitFragment"
+        android:label="fragment_exit"
+        tools:layout="@layout/fragment_exit" />
+</navigation>
